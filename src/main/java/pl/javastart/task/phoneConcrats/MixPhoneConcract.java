@@ -1,11 +1,12 @@
-package pl.javastart.task.PhoneConcrats;
+package pl.javastart.task.phoneConcrats;
 
 public class MixPhoneConcract extends PhoneConcract {
     private int freeSmsAmount;
     private int freeMmsAmount;
     private double freeMinutesAmount;
 
-    public MixPhoneConcract(double accountBalance, double smsPrice, double mmsPrice, double minutePrice, int freeSmsAmount, int freeMmsAmount, int freeMinutesAmount) {
+    public MixPhoneConcract(double accountBalance, double smsPrice, double mmsPrice, double minutePrice,
+                            int freeSmsAmount, int freeMmsAmount, int freeMinutesAmount) {
         super(accountBalance, smsPrice, mmsPrice, minutePrice);
         this.freeSmsAmount = freeSmsAmount;
         this.freeMmsAmount = freeMmsAmount;

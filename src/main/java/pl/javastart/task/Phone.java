@@ -1,6 +1,6 @@
 package pl.javastart.task;
 
-import pl.javastart.task.PhoneConcrats.PhoneConcract;
+import pl.javastart.task.phoneConcrats.PhoneConcract;
 
 public class Phone {
     PhoneConcract phoneConcract;

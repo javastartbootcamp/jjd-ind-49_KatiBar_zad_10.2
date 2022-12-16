@@ -1,4 +1,4 @@
-package pl.javastart.task.PhoneConcrats;
+package pl.javastart.task.phoneConcrats;
 
 public class AboPhoneConcract extends PhoneConcract {
     private double price;

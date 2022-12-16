@@ -1,4 +1,4 @@
-package pl.javastart.task.PhoneConcrats;
+package pl.javastart.task.phoneConcrats;
 
 public abstract class PhoneConcract {
     public static final int SECONDS_IN_MINUTE = 60;
