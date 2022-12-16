@@ -1,8 +1,8 @@
 package pl.javastart.task;
 
-import pl.javastart.task.phoneConcrats.AboPhoneConcract;
-import pl.javastart.task.phoneConcrats.CardPhoneConcract;
-import pl.javastart.task.phoneConcrats.MixPhoneConcract;
+import pl.javastart.task.phoneconcrats.AboPhoneConcract;
+import pl.javastart.task.phoneconcrats.CardPhoneConcract;
+import pl.javastart.task.phoneconcrats.MixPhoneConcract;
 
 public class Main {
 
