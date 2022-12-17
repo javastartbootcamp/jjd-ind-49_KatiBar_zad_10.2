@@ -1,27 +1,43 @@
 package pl.javastart.task;
 
-import pl.javastart.task.phoneconcrats.PhoneConcract;
+import pl.javastart.task.phoneconcrats.PhoneContract;
 
 public class Phone {
-    PhoneConcract phoneConcract;
+    private final PhoneContract phoneContract;
 
-    public Phone(PhoneConcract phoneConcract) {
-        this.phoneConcract = phoneConcract;
+    public Phone(PhoneContract phoneContract) {
+        this.phoneContract = phoneContract;
     }
 
     public void sendSms() {
-        phoneConcract.sendSms2();
+        boolean success = phoneContract.sendSms();
+        if (success) {
+            System.out.println("SMS wysłany");
+        } else {
+            System.out.println("Nie udało się wysłać SMSa, brak środków na koncie");
+        }
     }
 
     public void call(int seconds) {
-        phoneConcract.call2(seconds);
+        int result = phoneContract.call(seconds);
+
+        if (result == 0) {
+            System.out.println("Rozmowa nie została przeprowadzona, brak środków na koncie");
+        } else {
+            System.out.println("Rozmowa trwała: " + result + " sekund");
+        }
     }
 
     public void sendMms() {
-        phoneConcract.sendMms2();
+        boolean success = phoneContract.sendMms();
+        if (success) {
+            System.out.println("MMS wysłany");
+        } else {
+            System.out.println("Nie udało się wysłać MMSa, brak środków na koncie");
+        }
     }
 
     public void printAccountState() {
-        phoneConcract.printAccountState2();
+        phoneContract.printAccountState();
     }
 }
